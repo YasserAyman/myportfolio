@@ -1,0 +1,496 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+@font-face {
+    font-family: 'shadow';
+    src: url(../font/Shadows.ttf);
+}
+h1,h2,h3,h4,h5,h6,ul,li,p,ul,li,a {
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    height: 70px;
+    background: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10000;
+}
+
+.logo {
+    font-weight: 900;
+    font-family: 'shadow';
+    font-size: 30px;
+    margin-top: 10px;
+    transition: 0.5s ease-in-out;
+}
+
+.menu {
+
+}
+
+.menu ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navbar-collapse span {
+    font-size: 30px;
+    position: absolute;
+    right: -100%;
+    top: 25%;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+
+
+.menu ul a {
+    text-decoration: none;
+    list-style: none;
+    color: #26343c;
+    margin: 0 20px;
+    font-family: 'shadow';
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: 0.5s ease-in-out;
+    scroll-behavior: smooth;
+}
+
+.menu-collapse {
+    position: absolute;
+    right: -100%;
+    top: 120%;
+    transition: 0.5s ease-in-out;
+}
+
+.menu-collapse ul {
+    width: 130px;
+    height: 125px;
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column;
+    position: absolute;
+    top: 150%;
+    padding: 20px;
+    /* align-items: center; */
+}
+
+.menu-collapse ul a {
+    color: #26343c;
+    font-family: 'shadow';
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.container {
+    margin-top: 70px;
+}
+
+.container .why-me {
+    height: 500px;
+    background: url(../picture/dark2.jpg);
+    background-size: cover;
+    background-position-y: bottom;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p.hello {
+    width: 150px;
+    height: 100px;
+    font-size: 38px;
+    padding: 60px;
+    color: #fff;
+    font-weight: 600;
+    font-family: 'shadow';
+    letter-spacing: 7px;
+    border: 7px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me {
+    margin-bottom: 100px;
+    scroll-behavior: smooth;
+    -webkit-transition: -webkit-transform 0.6s ease-in-out;
+    transition: transform 0.6s ease-in-out;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.about-me .top {
+    padding: 30px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me .top h3 {
+    font-family: 'shadow';
+    font-size: 30px;
+    letter-spacing: 5px;
+    border: 4px solid #5d3939;
+    padding: 8px 35px;
+}
+
+.about-me .bottom {
+    height: 300px;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 75px;
+}
+
+.about-me .yasser-img {
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-me img {
+    height: 400px;
+    border-radius: 7px;
+}
+
+.about-me .about-me-text p {
+    width: 890px;
+    color: black;
+    font-size: 28px;
+    font-weight: 600;
+    font-family: 'shadow';
+    letter-spacing: 3px;
+}
+
+
+.my-skills {
+    height: 400px;
+    padding: 30px;
+    background: #e8e8e8;
+}
+
+.my-skills .top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-skills .top h3 {
+    font-family: 'shadow';
+    font-size: 30px;
+    letter-spacing: 5px;
+    border: 4px solid #5d3939;
+    padding: 8px 35px;
+}
+
+.my-skills .bottom {
+    height: 200px;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 75px;
+}
+
+.my-skills .bottom .box1, .box2, .box3 {
+    width: 330px;
+    height: 235px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-skills .bottom .box1 {
+
+}
+.html, .css, .js {
+    font-size: 70px;
+}
+
+.html {
+    color: #be4bdb;
+}
+
+.css {
+    color: #fff;
+}
+
+.js {
+    color: #15aabf;
+}
+
+.my-skills .bottom h4 {
+    margin-top: 40px;
+    font-size: 25px;
+}
+
+.my-skills .bottom .box2 {
+    background: #9ba4b4;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.my-skills .bottom .box3 {
+
+}
+
+
+.contact-me {
+    margin-bottom: 100px;
+    scroll-behavior: smooth;
+    -webkit-transition: -webkit-transform 0.6s ease-in-out;
+    transition: transform 0.6s ease-in-out;
+}
+
+.contact-me .top {
+    padding: 30px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-me .top h3 {
+    font-family: 'shadow';
+    font-size: 30px;
+    letter-spacing: 5px;
+    border: 4px solid #5d3939;
+    padding: 8px 35px;
+}
+
+.contact-me .bottom {
+    height: 300px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding-top: 75px;
+}
+
+.contact-me .bottom .mail {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.contact-me .bottom .mail p {
+    font-size: 18px;
+}
+
+.contact-me .bottom .mail .mail-icon {
+    font-size: 30px;
+    color: #9ba4b4;
+}
+
+.contact-me .bottom .social {
+    font-size: 50px;
+    
+}
+
+.contact-me .bottom .social .facebook {
+    color: #4c6ef5;
+}
+
+.contact-me .bottom .social .twitter {
+
+}
+
+footer {
+    height: 60px;
+    background: #26343c;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer span:hover {
+    color: #f1ff81;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+    .navbar-collapse span {
+        right: 5%;
+        top: 25%;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    .menu {
+        display: none;
+        transition: 0.5s ease-in-out;
+
+    }
+
+    .menu-collapse.active {
+        position: absolute;
+        right: 31%;
+        top: 110%;
+        transition: 0.5s ease-in-out;
+    }
+
+    .about-me {
+        display: flex;
+        flex-flow: column;
+        margin-bottom: 160px;
+    }
+
+    .top {
+        padding: 30px 0 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .about-me .bottom {
+        height: 300px;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 75px;
+    }
+    
+    .about-me .yasser-img {
+        width: 700px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .about-me img {
+        height: 400px;
+        border-radius: 7px;
+    }
+    
+    .about-me .about-me-text p {
+        width: 600px;
+        font-size: 20px;
+        font-weight: 600;
+        font-family: 'shadow';
+        margin-top: 30px;
+        letter-spacing: 3px;
+    }
+
+    .my-skills .bottom {
+        height: 200px;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: space-evenly;
+        padding-top: 75px;
+    }
+
+    .my-skills {
+        height: 615px;
+    }
+    .my-skills .bottom {
+        height: 400px;
+    }
+
+    .my-skills .bottom .box1, .box2, .box3 {
+        margin-top: 15px;
+    }
+
+    .my-skills .bottom .box2 {
+        padding: 20px 0;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .menu-collapse.active {
+        position: absolute;
+        right: 38%;
+        top: 110%;
+        transition: 0.5s ease-in-out;
+    }
+
+    .about-me .about-me-text p {
+        width: 460px;
+        font-size: 20px;
+        font-weight: 600;
+        font-family: 'shadow';
+        margin-top: 30px;
+        letter-spacing: 3px;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {  
+    .about-me {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .top {
+        padding: 30px 0 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .about-me .bottom {
+        height: 300px;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 75px;
+    }
+    
+    .about-me .yasser-img {
+        width: 700px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .about-me img {
+        height: 400px;
+        border-radius: 7px;
+    }
+    
+    .about-me .about-me-text p {
+        width: 600px;
+        font-size: 20px;
+        font-weight: 600;
+        font-family: 'shadow';
+        margin-top: 30px;
+        letter-spacing: 3px;
+    }
+
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+ 
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+    
+}
