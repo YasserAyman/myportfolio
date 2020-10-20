@@ -100,6 +100,7 @@ h1,h2,h3,h4,h5,h6,ul,li,p,ul,li,a {
 
 .container {
     margin-top: 70px;
+    position: relative;
 }
 
 .container .why-me {
@@ -138,7 +139,7 @@ p.hello {
 }
 
 .about-me .top {
-    padding: 30px 0 0 0;
+    margin: 30px 0px 85px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -158,11 +159,10 @@ p.hello {
     flex-flow: row;
     align-items: center;
     justify-content: space-evenly;
-    padding-top: 75px;
 }
 
 .about-me .yasser-img {
-    width: 700px;
+    width: calc(115% / 2);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -173,7 +173,7 @@ p.hello {
 }
 
 .about-me .about-me-text p {
-    width: 890px;
+    width: calc(165% / 2);
     color: black;
     font-size: 28px;
     font-weight: 600;
@@ -361,11 +361,8 @@ footer span:hover {
         margin-bottom: 160px;
     }
 
-    .top {
-        padding: 30px 0 0 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .about-me .top {
+        margin: 30px 0px 160px 0px;
     }
     
     .about-me .bottom {
@@ -378,7 +375,6 @@ footer span:hover {
     }
     
     .about-me .yasser-img {
-        width: 700px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -389,12 +385,13 @@ footer span:hover {
     }
     
     .about-me .about-me-text p {
-        width: 600px;
+        width: 320px;
         font-size: 20px;
         font-weight: 600;
         font-family: 'shadow';
         margin-top: 30px;
         letter-spacing: 3px;
+        margin-bottom: 80px;
     }
 
     .my-skills .bottom {
@@ -431,8 +428,11 @@ footer span:hover {
         transition: 0.5s ease-in-out;
     }
 
+    .about-me .top {
+        margin: 30px 0px 160px 0px;
+    }
+
     .about-me .about-me-text p {
-        width: 460px;
         font-size: 20px;
         font-weight: 600;
         font-family: 'shadow';
