@@ -139,7 +139,7 @@ p.hello {
 }
 
 .about-me .top {
-    margin: 30px 0px 85px 0px;
+/*     margin: 30px 0px 85px 0px; */
     display: flex;
     justify-content: center;
     align-items: center;
